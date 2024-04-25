@@ -37,3 +37,8 @@
   padding: 0px 10px;
 }
 
+@media (max-width: 855px) {
+    .information {
+        display: block;
+      }
+  }
