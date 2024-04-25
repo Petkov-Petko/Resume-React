@@ -12,3 +12,7 @@
     background-size: cover;
 }
 
+.homePage hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
