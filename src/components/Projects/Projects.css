@@ -1,6 +1,6 @@
 .allProjects {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 220px 220px 220px;
   grid-gap: 40px;
   justify-content: center;
 }
@@ -16,7 +16,7 @@
 }
 
 .project img {
-  width: 200px;
+  width: 210px;
   height: 283px;
   border-radius: 15px;
 }
