@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 22px;
+    z-index: 1000; 
+  }
+  
+  .navbar ul {
+    position: relative;
+    list-style-type: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: rgba(59, 59, 59, 0.322);
+    border-radius: 30px;
+  }
+  .navbar a {
+    padding: 50px;
+    text-decoration: none;
+    color: rgba(250, 235, 215, 0.712);
+    font-weight: bold;
+  }
+  .navbar li {
+    display: inline-block;
+  }
