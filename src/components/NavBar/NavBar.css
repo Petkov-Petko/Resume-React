@@ -2,12 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  padding-top: 22px;
+  padding-top: 60px;
   z-index: 1000;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .navbar ul {
@@ -21,11 +23,17 @@
 .navbar a {
   padding: 50px;
   text-decoration: none;
-  color: rgba(250, 235, 215, 0.712);
+  color: rgb(255, 255, 255);
   font-weight: bold;
+  font-size: 17px;
 }
 .navbar li {
   display: inline-block;
+}
+
+.navbar a:hover{
+  color: rgb(57,93,119);
+
 }
 
 @media (max-width: 855px) {

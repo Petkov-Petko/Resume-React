@@ -10,7 +10,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1>Projects:</h1>
       <div className="allProjects">
         {projects.slice(0, numProjectsToShow).map((project, index) => {

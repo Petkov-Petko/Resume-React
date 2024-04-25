@@ -3,7 +3,7 @@ import './About.css'
 
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
         <div className='leftSide'>
             <h3>About Me:</h3>
             <p>I'm an enthusiastic 25 year old front-end developer based in Bulgaria, passionate about JavaScript and React development.I'm currently enrolled into the Alpha JS program in Telerik Academy. I'm driven by a thirst for knowledge and a passion for problem-solving, pushing myself to master new technologies and tackle challenges head-on.</p>
