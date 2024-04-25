@@ -1,0 +1,36 @@
+.about{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-gap: 20px;
+    padding: 0px 10px;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.tools {
+    display: flex;
+    gap: 11px;
+    flex-wrap: wrap;
+  }
+  
+  .tools span {
+    border: 1px solid rebeccapurple;
+    background-color: rgba(59, 59, 59, 0.322);
+    border: none;
+    padding: 11px;
+    border-radius: 7px;
+    font-size: 17px;
+  }
+
+.about h3{
+   padding: 7px 0px;
+}
+
+.leftSide a{
+    text-decoration: none;
+    color: black;
+}
