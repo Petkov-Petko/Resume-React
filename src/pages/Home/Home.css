@@ -1,18 +1,32 @@
 .homePage {
-    border: 1px solid black;
-    width: 800px;
-    margin: 50px auto;
-    border-radius: 15px;
-    padding: 20px;
-    background-image: linear-gradient(to bottom, #85aac3a2, #f5cda3da);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+  border: 1px solid black;
+  width: 800px;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #85aac3a2, #f5cda3da);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.homePage hr{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.homePage hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+
+@media (max-width: 855px) {
+  .homePage {
+    width: 500px;
+  }
+}
+
+@media (max-width: 558px) {
+    .homePage {
+      width: 340px;
+    }
+  }
+  
+  
