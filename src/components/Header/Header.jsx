@@ -18,7 +18,7 @@ const Header = () => {
       </p>
       <p className="information"><i className="fa-solid fa-location-dot fa-lg" style={{color:' #00c3ff'}}></i>123 Main Street Varna</p>
       <p className="information"><i className="fa-solid fa-phone fa-lg" style={{color: '#00c3ff'}}></i>+356 892 926 593</p>
-      <hr/>
+    
     </div>
   );
 };
