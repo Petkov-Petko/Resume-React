@@ -1,6 +1,6 @@
 .about{
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: auto auto;
     grid-gap: 20px;
     padding: 0px 10px;
 }
@@ -34,3 +34,14 @@
     text-decoration: none;
     color: black;
 }
+
+
+@media (max-width: 558px) {
+    .about{
+        grid-template-columns: auto ;
+    }
+    .leftSide{
+        border-right: 0px solid rgb(255, 255, 255);
+    }
+  }
+  
