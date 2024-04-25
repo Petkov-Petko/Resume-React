@@ -1,0 +1,43 @@
+.header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1{
+    font-size: 2.5em;
+    color: #3b3b3bc0;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 1.5em;
+    color: #101010;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.information {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.header hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
