@@ -20,7 +20,7 @@ const Projects = () => {
               className="project"
               data-title={project.description}
             >
-              <img src={project.img} alt="Project Image"></img>
+              <a href={project.url} target="_blank"><img src={project.img} alt="Project Image"></img></a>
               <div>
                 <a href={project.url} target="_blank" rel="noreferrer">
                   <i className="fa-solid fa-link fa-lg"></i>

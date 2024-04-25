@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.project{
+  border-radius: 15px;
+}
+
 .projects h1 {
   padding-bottom: 15px;
 }
@@ -20,6 +24,7 @@
   height: 283px;
   border-radius: 15px;
 }
+
 
 .project::before {
   content: attr(data-title);

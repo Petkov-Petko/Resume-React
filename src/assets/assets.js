@@ -12,9 +12,9 @@ export const assets = {
 export const projects = [
     {
       title: 'Franchelli',
-      description: 'This is a project for my portfolio. Here I will showcase my projects and skills.',
+      description: 'React-based food website.Current version focuses on the front end, future updates will include backend functionality',
       img: franchelli,
-      url: `https://www.google.com`,
+      url: `https://petkov-petko.github.io/Franchelli/`,
       github: `https://github.com/Petkov-Petko/Franchelli`
     },
     {
