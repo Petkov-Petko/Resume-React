@@ -37,7 +37,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="contactForm">
-        <h1 className="contactMe">Send me message:</h1>
+        <h1 className="contactMe">Send me a message:</h1>
         <form
           className="form"
           action="https://api.web3forms.com/submit"
