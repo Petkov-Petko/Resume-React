@@ -4,12 +4,20 @@ import quizApp from './quizApp.png';
 import weatherApp from './weatherApp.png';
 import imageSearch from './imageSearch.png';
 import calculator from './Calculator.png';
+import reactHub from './ReactHub.png';
 
 export const assets = {
     profilePhoto,
   };
   
 export const projects = [
+  {
+    title: 'ReactHub',
+    description: 'This is a forum website built with React and Firebase database.',
+    img: reactHub,
+    url: `https://reactduo-forumproject.web.app/`,
+    github: `https://github.com/React-Duo/Forum-Project`
+  },
     {
       title: 'Franchelli',
       description: 'React-based food website.Current version focuses on the front end, future updates will include backend functionality',
