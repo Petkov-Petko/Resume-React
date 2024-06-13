@@ -14,10 +14,10 @@ const Header = () => {
           className="fa-solid fa-envelope fa-lg"
           style={{ color: "#00c3ff" }}
         ></i>
-        PetkoZlatilov1234@gmail.com
+        Petkozlatilov1234@gmail.com
       </p>
-      <p className="information"><i className="fa-solid fa-location-dot fa-lg" style={{color:' #00c3ff'}}></i>123 Main Street Varna</p>
-      <p className="information"><i className="fa-solid fa-phone fa-lg" style={{color: '#00c3ff'}}></i>+356 892 926 593</p>
+      <p className="information"><i className="fa-solid fa-location-dot fa-lg" style={{color:' #00c3ff'}}></i>Varna Bulgaria</p>
+      <p className="information"><i className="fa-solid fa-phone fa-lg" style={{color: '#00c3ff'}}></i>+359 892 926 593</p>
     
     </div>
   );
