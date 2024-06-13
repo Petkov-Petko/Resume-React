@@ -5,12 +5,20 @@ import weatherApp from './weatherApp.png';
 import imageSearch from './imageSearch.png';
 import calculator from './Calculator.png';
 import reactHub from './ReactHub.png';
+import calendra from './calendra.png';
 
 export const assets = {
     profilePhoto,
   };
   
 export const projects = [
+  {
+    title: 'Calendra',
+    description: 'An Event Calendar Website using React and Firebase for efficient, scalable event management with a clear, intuitive, and fully responsive interface.',
+    img: calendra,
+    url: `https://event-calendar-c74a9.web.app/`,
+    github: `https://github.com/React-Duo/Event-Calendar`
+  },
   {
     title: 'ReactHub',
     description: 'This is a forum website built with React and Firebase database.',
