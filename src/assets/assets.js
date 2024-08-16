@@ -31,7 +31,7 @@ export const projects = [
     title: 'Estato',
     description: 'Real estate platform using React, TypeScript, and Firebase for renting and buying properties. Currently under development.',
     img: estato,
-    url: `https://realestate-dcdcb.firebaseapp.com/`,
+    url: `https://realestate-dcdcb.web.app`,
     github: `https://github.com/Petkov-Petko/RealEstate`
   },
   {
