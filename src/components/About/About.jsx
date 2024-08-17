@@ -30,6 +30,7 @@ const About = () => {
             <span>Eslint</span>
             <span>Bootstrap</span>
             <span>Firebase</span>
+            <span>Tailwind</span>
           </div>
         </div>
         
