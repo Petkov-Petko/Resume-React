@@ -5,9 +5,9 @@ const About = () => {
     <div className='about' id='about'>
         <div className='leftSide'>
             <h3>About Me:</h3>
-            <p>I&apos;m an enthusiastic 25 year old front-end developer based in Bulgaria, passionate about JavaScript and React development. I have graduated from the Alpha JS program in Telerik Academy. I&apos;m driven by a thirst for knowledge and a passion for problem-solving, pushing myself to master new technologies and tackle challenges head-on.</p>
+            <p>I&apos;m an enthusiastic 25 year old front-end developer based in Bulgaria, passionate Front End development. I have graduated from the Alpha JS program in Telerik Academy. I&apos;m driven by a thirst for knowledge and a passion for problem-solving, pushing myself to master new technologies and tackle challenges head-on.</p>
             <h3>Education</h3>
-            <p>Telerik Academy - Jan 2024</p>
+            <p>Telerik Academy - June 2024</p>
             <p>Nikola Vaptsarov Naval Academy - Oct 2022</p>
             <h3>Licenses & certifications</h3>
             <a href='https://www.udemy.com/course/the-complete-web-development-bootcamp/' target='_blank'>Web Development Bootcamp(Udemy)</a>
@@ -25,12 +25,15 @@ const About = () => {
             <span>CSS3</span>
             <span>TypeScript</span>
             <span>Node.js</span>
+            <span>Firebase</span>
+            <span>Redux</span>
+            <span>Tailwind</span>
+            <span>SASS</span>
             <span>Git</span>
             <span>Jest</span>
             <span>Eslint</span>
             <span>Bootstrap</span>
-            <span>Firebase</span>
-            <span>Tailwind</span>
+
           </div>
         </div>
         
