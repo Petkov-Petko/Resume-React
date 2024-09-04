@@ -1,4 +1,3 @@
-import profilePhoto from './IMG_3688.jpg';
 import franchelli from './Franchelli.png';
 import quizApp from './quizApp.png';
 import weatherApp from './weatherApp.png';
@@ -7,6 +6,7 @@ import calculator from './Calculator.png';
 import reactHub from './ReactHub.png';
 import calendra from './calendra.png';
 import estato from './canvaestate.png'
+import profilePhoto from './profile.jpg'
 
 export const assets = {
   profilePhoto,
