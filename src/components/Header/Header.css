@@ -37,6 +37,10 @@
   padding: 0px 10px;
 }
 
+.header i {
+  padding-right: 5px;
+}
+
 @media (max-width: 855px) {
     .information {
         display: block;
