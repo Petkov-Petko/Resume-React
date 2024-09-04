@@ -1,11 +1,11 @@
-.about{
+.about {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
     padding: 0px 10px;
 }
 
-.leftSide{
+.leftSide {
     display: flex;
     flex-direction: column;
     border-right: 1px solid rgb(255, 255, 255);
@@ -15,33 +15,42 @@
     display: flex;
     gap: 11px;
     flex-wrap: wrap;
-  }
-  
-  .tools span {
+}
+
+.tools span {
     border: 1px solid rebeccapurple;
     background-color: rgba(59, 59, 59, 0.322);
     border: none;
     padding: 11px;
     border-radius: 7px;
     font-size: 17px;
-  }
-
-.about h3{
-   padding: 7px 0px;
+    transition: background-color 0.3s ease;
+}
+.tools span:hover {
+    background-color: rgba(59, 59, 59, 0.518);
 }
 
-.leftSide a{
+.about h3 {
+    padding: 7px 0px;
+}
+
+.leftSide a {
     text-decoration: none;
     color: black;
+    padding: 1px 0px;
+}
+
+.leftSide a:hover {
+    color: rgb(66, 66, 65);
 }
 
 
 @media (max-width: 558px) {
-    .about{
-        grid-template-columns: auto ;
+    .about {
+        grid-template-columns: auto;
     }
-    .leftSide{
+
+    .leftSide {
         border-right: 0px solid rgb(255, 255, 255);
     }
-  }
-  
+}
