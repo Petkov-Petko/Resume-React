@@ -29,7 +29,7 @@
 .project::before {
   content: attr(data-title);
   position: absolute;
-  top: 40%;
+  top: 47%;
   left: 40%;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -37,6 +37,8 @@
   color: rgb(12, 12, 12);
   font-size: 17px;
   font-weight: bold;
+  width: fit-content;
+  height: fit-content;
 }
 
 .project:hover::before {

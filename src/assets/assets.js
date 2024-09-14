@@ -7,12 +7,20 @@ import reactHub from './ReactHub.png';
 import calendra from './calendra.png';
 import estato from './canvaestate.png'
 import profilePhoto from './profile.jpg'
+import flirty from './flirty.png'
 
 export const assets = {
   profilePhoto,
 };
 
 export const projects = [
+  {
+    title: 'Flirty',
+    description: 'Flirty is a modern dating app built with TypeScript, Firebase, and React, offering a fully responsive experience for mobile users. Easily slide through profiles, match, and chat in a fast, secure, and seamless environment.',
+    img: flirty,
+    url: `https://datingapp-8e4ad.web.app`,
+    github: `https://github.com/Petkov-Petko/Dating`
+  },
   {
     title: 'Calendra',
     description: 'An Event Calendar Website using React and Firebase for efficient, scalable event management with a clear, intuitive, and fully responsive interface.',
