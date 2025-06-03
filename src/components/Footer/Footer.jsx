@@ -4,9 +4,11 @@ import './Footer.css'
 
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear()
+
   return (
     <div className='footer'>
-       <p>© 2024 Petko Petkov</p>
+       <p>© {currentYear} Petko Petkov</p>
     </div>
   )
 }
