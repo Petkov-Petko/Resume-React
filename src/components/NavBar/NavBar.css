@@ -76,7 +76,7 @@
     width: 300px;
   }
   .navbar a {
-    padding: 12px 11px;
+    padding: 12px 7px;
   }
   .navbar a::after {
     left: 11px;
