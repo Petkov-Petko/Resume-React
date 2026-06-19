@@ -1,29 +1,49 @@
-.header img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  opacity: 0.8;
-  margin-top: 10px;
-}
-
 .header {
   text-align: center;
+  padding-top: 90px;
 }
 
-.header h1{
-    font-size: 2.5em;
-    color: #3b3b3bc0;
-    text-shadow: 1px 1px 2px #000000;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.header img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.header img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 34px rgba(57, 162, 219, 0.5);
+}
+
+.header h1 {
+  font-size: 2.7em;
+  font-weight: 700;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #1b3a4b, #39a2db, #1b3a4b);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 0.8s ease 0.15s both, gradientShift 6s linear infinite;
 }
 
 .header h2 {
-    font-size: 1.5em;
-    color: #101010;
-    text-shadow: 1px 1px 2px #000000;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #14313f;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  animation: fadeInUp 0.8s ease 0.3s both;
+}
+
+.header .information {
+  animation: fadeInUp 0.8s ease 0.45s both;
 }
 
 .contacts {

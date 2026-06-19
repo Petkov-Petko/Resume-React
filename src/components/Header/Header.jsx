@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets";
 const Header = () => {
   return (
     <div className="header" id="title">
-      <img src={assets.profilePhoto}></img>
+      <img src={assets.profilePhoto} alt="Petko Petkov"></img>
       <h1>Hello. I&apos;m Petko Petkov.</h1>
       <h2>Frontend Developer.</h2>
       <div className="contacts"></div>

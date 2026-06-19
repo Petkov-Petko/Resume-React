@@ -6,57 +6,76 @@
 }
 
 .project {
+  position: relative;
+  overflow: hidden;
   border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
 .projects h1 {
-  padding-bottom: 15px;
-}
-
-.project a {
-  text-decoration: none;
-  color: black;
-  padding: 10px 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #14313f;
 }
 
 .project img {
-  width: 210px;
+  display: block;
+  width: 100%;
   height: 283px;
+  object-fit: cover;
   border-radius: 15px;
 }
 
-
-.project::before {
-  content: attr(data-title);
+.project-overlay {
   position: absolute;
-  top: 47%;
-  left: 40%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px;
+  border-radius: 15px;
+  color: #fff;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.6) 45%,
+    rgba(0, 0, 0, 0) 100%
+  );
   opacity: 0;
-  transition: 0.3s;
-  color: rgb(12, 12, 12);
-  font-size: 17px;
-  font-weight: bold;
-  width: fit-content;
-  height: fit-content;
+  transition: opacity 0.3s ease;
 }
 
-.project:hover::before {
+.project:hover .project-overlay {
   opacity: 1;
 }
 
-.project {
-  position: relative;
-  overflow: hidden;
+.project-overlay h3 {
+  margin: 0 0 8px;
+  font-size: 1.25em;
 }
 
-.project img {
-  width: 100%;
-  transition: 0.3s;
+.project-overlay p {
+  margin: 0 0 12px;
+  font-size: 0.85em;
+  line-height: 1.4;
 }
 
-.project:hover img {
-  opacity: 0.2;
+.project-links a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 16px;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: #39a2db;
 }
 
 .btn {

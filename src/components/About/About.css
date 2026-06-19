@@ -18,30 +18,40 @@
 }
 
 .tools span {
-    border: 1px solid rebeccapurple;
-    background-color: rgba(59, 59, 59, 0.322);
-    border: none;
-    padding: 11px;
-    border-radius: 7px;
-    font-size: 17px;
-    transition: background-color 0.3s ease;
+    background-color: rgba(30, 35, 45, 0.4);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: default;
+    transition: transform 0.25s ease, background-color 0.25s ease,
+      box-shadow 0.25s ease;
 }
 .tools span:hover {
-    background-color: rgba(59, 59, 59, 0.518);
+    transform: translateY(-4px);
+    background-color: #39a2db;
+    box-shadow: 0 6px 14px rgba(57, 162, 219, 0.45);
 }
 
 .about h3 {
     padding: 7px 0px;
+    font-weight: 600;
+    color: #14313f;
 }
 
 .leftSide a {
     text-decoration: none;
-    color: black;
-    padding: 1px 0px;
+    color: #14313f;
+    padding: 2px 0px;
+    width: fit-content;
+    transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .leftSide a:hover {
-    color: rgb(66, 66, 65);
+    color: #39a2db;
+    transform: translateX(5px);
 }
 
 

@@ -1,13 +1,24 @@
 form input,
 form textarea {
-  border: 0;
+  border: 1px solid transparent;
   outline: none;
   background-color: rgba(85, 105, 110, 0.519);
   padding: 15px;
   color: white;
+  font-family: inherit;
   font-size: 17px;
-  border-radius: 7px;
+  border-radius: 10px;
   box-shadow: 3px 3px 3px #00000056;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease, background-color 0.25s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  transform: translateY(-2px);
+  border-color: #39a2db;
+  background-color: rgba(85, 105, 110, 0.7);
+  box-shadow: 0 6px 18px rgba(57, 162, 219, 0.35);
 }
 
 .form {
@@ -60,7 +71,7 @@ form textarea {
   padding: 7px 0px;
 }
 
-button {
+.form button {
   width: 140px;
   font-family: inherit;
   font-size: 18px;
@@ -73,33 +84,34 @@ button {
   border: none;
   border-radius: 25px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   transition: all 0.3s;
 }
 
-button:hover {
+.form button:hover {
   transform: translateY(-3px);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-button:active {
+.form button:active {
   transform: scale(0.95);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-button span {
+.form button span {
   display: block;
   margin-left: 0.4em;
   transition: all 0.3s;
 }
 
-button svg {
+.form button svg {
   width: 18px;
   height: 18px;
   fill: white;
   transition: all 0.3s;
 }
 
-button .svg-wrapper {
+.form button .svg-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,11 +123,11 @@ button .svg-wrapper {
   transition: all 0.3s;
 }
 
-button:hover .svg-wrapper {
+.form button:hover .svg-wrapper {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-button:hover svg {
+.form button:hover svg {
   transform: rotate(45deg);
 }
 
