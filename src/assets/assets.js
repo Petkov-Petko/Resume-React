@@ -14,6 +14,31 @@ export const assets = {
   profilePhoto,
 };
 
+// Returns a dynamic "Built X ago" string based on the project's build date.
+export const buildAgo = (dateStr) => {
+  const then = new Date(dateStr);
+  const now = new Date();
+
+  let months =
+    (now.getFullYear() - then.getFullYear()) * 12 +
+    (now.getMonth() - then.getMonth());
+  // Subtract a month if we haven't reached the build day-of-month yet.
+  if (now.getDate() < then.getDate()) months--;
+  if (months < 0) months = 0;
+
+  if (months === 0) return "Built less than a month ago";
+
+  const years = Math.floor(months / 12);
+  const remMonths = months % 12;
+
+  const parts = [];
+  if (years > 0) parts.push(`${years} year${years > 1 ? "s" : ""}`);
+  if (remMonths > 0)
+    parts.push(`${remMonths} month${remMonths > 1 ? "s" : ""}`);
+
+  return `Built ${parts.join(" and ")} ago`;
+};
+
 export const projects = [
   {
     title: "Nightlife",
@@ -21,6 +46,7 @@ export const projects = [
       "NightLife is a modern event platform built with Next.js and Supabase, allowing users to discover events, connect with others, and share unforgettable nightlife experiences through a fast, secure, and responsive interface.",
     img: nightlife,
     url: `https://nightlife-platform-five.vercel.app/`,
+    date: "2026-05-19",
   },
   {
     title: "Flirty",
@@ -29,6 +55,7 @@ export const projects = [
     img: flirty,
     url: `https://datingapp-8e4ad.web.app`,
     github: `https://github.com/Petkov-Petko/Dating`,
+    date: "2024-09-13",
   },
   {
     title: "Calendra",
@@ -37,6 +64,7 @@ export const projects = [
     img: calendra,
     url: `https://event-calendar-c74a9.web.app/`,
     github: `https://github.com/React-Duo/Event-Calendar`,
+    date: "2024-06-12",
   },
   {
     title: "ReactHub",
@@ -45,6 +73,7 @@ export const projects = [
     img: reactHub,
     url: `https://reactduo-forumproject.web.app/`,
     github: `https://github.com/React-Duo/Forum-Project`,
+    date: "2024-05-13",
   },
   {
     title: "Estato",
@@ -53,6 +82,7 @@ export const projects = [
     img: estato,
     url: `https://realestate-dcdcb.web.app`,
     github: `https://github.com/Petkov-Petko/RealEstate`,
+    date: "2024-08-06",
   },
   {
     title: "Franchelli",
@@ -61,6 +91,7 @@ export const projects = [
     img: franchelli,
     url: `https://petkov-petko.github.io/Franchelli/`,
     github: `https://github.com/Petkov-Petko/Franchelli`,
+    date: "2024-04-24",
   },
   {
     title: "Quiz App",
@@ -68,6 +99,7 @@ export const projects = [
     img: quizApp,
     url: `https://petkov-petko.github.io/quizApp2/`,
     github: `https://github.com/Petkov-Petko/quizApp2`,
+    date: "2024-04-20",
   },
   {
     title: "Weather App",
@@ -76,6 +108,7 @@ export const projects = [
     img: weatherApp,
     url: `https://petkov-petko.github.io/Weather-conditions/`,
     github: `https://github.com/Petkov-Petko/Weather-conditions`,
+    date: "2024-04-01",
   },
   {
     title: "Image Search",
@@ -83,6 +116,7 @@ export const projects = [
     img: imageSearch,
     url: `https://petkov-petko.github.io/Image-Search/`,
     github: `https://github.com/Petkov-Petko/Image-Search`,
+    date: "2024-03-31",
   },
   {
     title: "Calculator",
@@ -90,5 +124,6 @@ export const projects = [
     img: calculator,
     url: `https://petkov-petko.github.io/Calculator/`,
     github: `https://github.com/Petkov-Petko/Calculator`,
+    date: "2023-10-01",
   },
 ];

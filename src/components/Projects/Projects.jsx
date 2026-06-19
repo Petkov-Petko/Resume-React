@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Projects.css";
-import { projects } from "../../assets/assets";
+import { projects, buildAgo } from "../../assets/assets";
 
 const Projects = () => {
   const [numProjectsToShow, setNumProjectsToShow] = useState(6);
@@ -20,6 +20,12 @@ const Projects = () => {
               <div className="project-overlay">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
+                {project.date && (
+                  <span className="project-date">
+                    <i className="fa-solid fa-clock"></i>
+                    {buildAgo(project.date)}
+                  </span>
+                )}
                 <div className="project-links">
                   <a href={project.url} target="_blank" rel="noreferrer">
                     <i className="fa-solid fa-link fa-lg"></i>

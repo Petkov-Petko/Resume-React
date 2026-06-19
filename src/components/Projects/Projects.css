@@ -62,9 +62,19 @@
 }
 
 .project-overlay p {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   font-size: 0.85em;
   line-height: 1.4;
+}
+
+.project-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 0.78em;
+  font-weight: 500;
+  color: #7fd0f5;
 }
 
 .project-links a {
